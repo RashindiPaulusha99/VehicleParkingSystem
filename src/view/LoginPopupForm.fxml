@@ -15,7 +15,7 @@
    <children>
       <ImageView fitHeight="487.0" fitWidth="426.0" layoutY="97.0" opacity="0.37" pickOnBounds="true">
          <image>
-            <Image url="@../assets/istockphoto-1358825369-612x612.jpg" />
+            <Image url="@../assets/loginimage.jpg" />
          </image>
       </ImageView>
       <Label layoutX="67.0" layoutY="180.0" prefHeight="31.0" prefWidth="96.0" style="-fx-background-color: white;" text=" User Name :">

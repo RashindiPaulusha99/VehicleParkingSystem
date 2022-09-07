@@ -11,35 +11,49 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane fx:id="logInFormContext" prefHeight="349.0" prefWidth="624.0" style="-fx-background-color: #CAD3C8;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.LoginPopupFormController">
+<AnchorPane fx:id="logInFormContext" prefHeight="584.0" prefWidth="624.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.LoginPopupFormController">
    <children>
-      <ImageView fitHeight="60.0" fitWidth="61.0" layoutX="264.0" layoutY="12.0" pickOnBounds="true">
+      <ImageView fitHeight="487.0" fitWidth="426.0" layoutY="97.0" opacity="0.37" pickOnBounds="true">
          <image>
-            <Image url="@../assets/121105442-creative-illustration-of-default-avatar-profile-placeholder-isolated-on-background-art-design-grey-p.jpg" />
+            <Image url="@../assets/loginimage.jpg" />
          </image>
       </ImageView>
-      <Label layoutX="45.0" layoutY="102.0" prefHeight="31.0" prefWidth="96.0" style="-fx-background-color: white;" text=" User Name :" />
-      <Label layoutX="45.0" layoutY="176.0" prefHeight="31.0" prefWidth="96.0" style="-fx-background-color: white;" text="  Password :" />
-      <JFXTextField fx:id="userNameContext" layoutX="156.0" layoutY="102.0" prefHeight="31.0" prefWidth="366.0" style="-fx-background-color: white;" />
-      <JFXPasswordField fx:id="passwordContext" layoutX="156.0" layoutY="176.0" prefHeight="31.0" prefWidth="366.0" style="-fx-background-color: white;" />
-      <JFXButton fx:id="btnCancel" buttonType="RAISED" layoutX="261.0" layoutY="277.0" onAction="#cancelLogInForm" prefHeight="38.0" prefWidth="129.0" style="-fx-background-color: white; -fx-border-color: #3498db; -fx-border-radius: 12; -fx-background-radius: 12;" text="Cancel">
+      <Label layoutX="67.0" layoutY="180.0" prefHeight="31.0" prefWidth="96.0" style="-fx-background-color: white;" text=" User Name :">
+         <font>
+            <Font size="16.0" />
+         </font></Label>
+      <Label layoutX="67.0" layoutY="288.0" prefHeight="31.0" prefWidth="96.0" style="-fx-background-color: white;" text="  Password :">
+         <font>
+            <Font size="16.0" />
+         </font></Label>
+      <JFXTextField fx:id="userNameContext" layoutX="178.0" layoutY="172.0" prefHeight="31.0" prefWidth="366.0" style="-fx-background-color: white;" />
+      <JFXPasswordField fx:id="passwordContext" layoutX="178.0" layoutY="281.0" prefHeight="31.0" prefWidth="366.0" style="-fx-background-color: white;" />
+      <JFXButton fx:id="btnCancel" buttonType="RAISED" layoutX="165.0" layoutY="446.0" onAction="#cancelLogInForm" prefHeight="38.0" prefWidth="129.0" style="-fx-background-color: red; -fx-border-radius: 12; -fx-background-radius: 12;" text="Cancel" textFill="WHITE">
          <effect>
             <Blend />
          </effect>
          <cursor>
             <Cursor fx:constant="DEFAULT" />
          </cursor>
-      </JFXButton>
-      <JFXButton fx:id="button" buttonType="RAISED" layoutX="427.0" layoutY="277.0" onAction="#openParkingSystemForm" prefHeight="31.0" prefWidth="129.0" style="-fx-background-color: #3498db; -fx-background-radius: 12;" text="LOGIN " textFill="WHITE">
          <font>
-            <Font name="System Bold" size="17.0" />
+            <Font name="System Bold" size="19.0" />
+         </font>
+      </JFXButton>
+      <JFXButton fx:id="button" buttonType="RAISED" layoutX="331.0" layoutY="446.0" onAction="#openParkingSystemForm" prefHeight="31.0" prefWidth="129.0" style="-fx-background-color: #3498db; -fx-background-radius: 12;" text="LOGIN " textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="19.0" />
          </font>
          <cursor>
             <Cursor fx:constant="DEFAULT" />
          </cursor>
       </JFXButton>
-      <Label fx:id="errorMassageContext" layoutX="156.0" layoutY="218.0" prefHeight="24.0" prefWidth="366.0" textFill="#cd0d0d" />
-      <Label fx:id="errorMassageContext1" layoutX="156.0" layoutY="141.0" prefHeight="24.0" prefWidth="366.0" textFill="#cd0d0d" />
+      <Label fx:id="errorMassageContext" layoutX="178.0" layoutY="211.0" prefHeight="24.0" prefWidth="366.0" textFill="#cd0d0d" />
+      <Label fx:id="errorMassageContext1" layoutX="178.0" layoutY="319.0" prefHeight="24.0" prefWidth="366.0" textFill="#cd0d0d" />
+      <Label layoutX="226.0" layoutY="31.0" text="LOGIN">
+         <font>
+            <Font name="Arial Rounded MT Bold" size="51.0" />
+         </font>
+      </Label>
    </children>
    <effect>
       <Blend />

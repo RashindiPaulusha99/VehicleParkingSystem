@@ -16,7 +16,7 @@
    <children>
       <ImageView fitHeight="710.0" fitWidth="1323.0" layoutY="163.0" pickOnBounds="true">
          <image>
-            <Image url="@../assets/Creating-a-Parking-App-From-A-to-Z-Guide.png" />
+            <Image url="@../assets/dashboardimage.png" />
          </image>
       </ImageView>
       <JFXButton buttonType="RAISED" layoutX="146.0" layoutY="771.0" onAction="#openSelectVehicleForm" prefHeight="52.0" prefWidth="213.0" style="-fx-background-color: #3498db; -fx-background-radius: 30;" text="-&gt; Get Started" textFill="WHITE">

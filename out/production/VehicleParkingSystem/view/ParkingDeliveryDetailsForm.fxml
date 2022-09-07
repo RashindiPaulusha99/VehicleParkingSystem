@@ -12,12 +12,12 @@
 
 <AnchorPane fx:id="parkingSystemContext" prefHeight="873.0" prefWidth="1323.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.ParkingDeliveryDetailsFormController">
    <children>
-      <ImageView fitHeight="287.0" fitWidth="1289.0" layoutX="20.0" layoutY="199.0" opacity="0.75" pickOnBounds="true">
+      <ImageView fitHeight="287.0" fitWidth="1289.0" layoutX="20.0" layoutY="147.0" opacity="0.75" pickOnBounds="true">
          <image>
             <Image url="@../assets/kissclipart-automobiles-icon-parking-icon-transport-icon-9fc73345fad33deb.png" />
          </image>
       </ImageView>
-      <JFXButton buttonType="RAISED" layoutX="1109.0" layoutY="68.0" onAction="#backToSelectVehicleForm" prefHeight="44.0" prefWidth="133.0" style="-fx-background-color: #55E6C1; -fx-background-radius: 15;" text="LOGOUT" textFill="WHITE">
+      <JFXButton buttonType="RAISED" layoutX="1168.0" layoutY="19.0" onAction="#backToSelectVehicleForm" prefHeight="44.0" prefWidth="133.0" style="-fx-background-color: #55E6C1; -fx-background-radius: 15;" text="LOGOUT" textFill="WHITE">
          <font>
             <Font name="System Bold" size="20.0" />
          </font>
@@ -25,7 +25,7 @@
             <Cursor fx:constant="HAND" />
          </cursor>
       </JFXButton>
-      <TableView fx:id="tblVehicle1" layoutX="18.0" layoutY="197.0" opacity="0.92" prefHeight="294.0" prefWidth="1296.0">
+      <TableView fx:id="tblVehicle1" layoutX="16.0" layoutY="142.0" opacity="0.92" prefHeight="294.0" prefWidth="1296.0">
         <columns>
           <TableColumn fx:id="colVehicleNumber" prefWidth="339.0" text="Vehicle Number" />
           <TableColumn fx:id="colVehicleType" prefWidth="294.0" text="VehicleType" />
@@ -33,51 +33,22 @@
             <TableColumn fx:id="colParkTime" prefWidth="372.0" text="Parked Time" />
         </columns>
       </TableView>
-      <AnchorPane layoutX="12.0" layoutY="14.0" prefHeight="153.0" prefWidth="335.0" style="-fx-background-color: white; -fx-background-radius: 25;">
-         <children>
-            <JFXButton fx:id="btnPark" buttonType="RAISED" layoutX="18.0" layoutY="21.0" onAction="#btnDisableParking" prefHeight="44.0" prefWidth="299.0" style="-fx-border-radius: 25; -fx-border-color: purple; -fx-background-radius: 25; -fx-background-color: #cd84f1;" text="View In Parking    &gt;&gt;" textFill="WHITE">
-               <font>
-                  <Font name="System Bold" size="19.0" />
-               </font>
-               <cursor>
-                  <Cursor fx:constant="HAND" />
-               </cursor>
-               <effect>
-                  <DropShadow height="24.11" radius="11.555" width="24.11" />
-               </effect>
-            </JFXButton>
-            <JFXButton fx:id="btnDelivery" buttonType="RAISED" layoutX="18.0" layoutY="86.0" onAction="#btnDisableDelivery" prefHeight="44.0" prefWidth="299.0" style="-fx-border-color: purple; -fx-border-radius: 25; -fx-background-radius: 25; -fx-background-color: #cd84f1;" text="View On Delivery    &gt;&gt;" textFill="WHITE">
-               <font>
-                  <Font name="System Bold" size="19.0" />
-               </font>
-               <cursor>
-                  <Cursor fx:constant="HAND" />
-               </cursor>
-               <effect>
-                  <DropShadow radius="7.6675" width="11.67" />
-               </effect>
-            </JFXButton>
-         </children>
-         <effect>
-            <DropShadow height="35.38" radius="15.342500000000001" spread="0.21" width="27.99" />
-         </effect>
-      </AnchorPane>
-      <JFXButton buttonType="RAISED" layoutX="701.0" layoutY="41.0" onAction="#openAdd" prefHeight="77.0" prefWidth="204.0" style="-fx-border-color: #3498db; -fx-border-width: 3; -fx-border-radius: 50; -fx-background-radius: 50; -fx-background-color: #dff9fb;" text="ADD ">
+      <JFXButton buttonType="RAISED" layoutX="632.0" layoutY="24.0" onAction="#openAdd" prefHeight="56.0" prefWidth="175.0" style="-fx-border-color: #3498db; -fx-border-width: 3; -fx-border-radius: 50; -fx-background-radius: 50; -fx-background-color: #dff9fb;" text="Add Vehicle ">
          <cursor>
             <Cursor fx:constant="HAND" />
          </cursor>
          <font>
-            <Font name="Arial Bold" size="42.0" />
+            <Font name="Arial Bold" size="22.0" />
          </font>
          <effect>
             <DropShadow />
          </effect></JFXButton>
-      <ImageView fitHeight="324.0" fitWidth="1296.0" layoutX="16.0" layoutY="521.0" opacity="0.75" pickOnBounds="true">
+      <ImageView fitHeight="324.0" fitWidth="1296.0" layoutX="13.0" layoutY="535.0" opacity="0.75" pickOnBounds="true">
          <image>
             <Image url="@../assets/car-van-truck-png-favpng-EJi67pBnSLn4guYHU2qWr3rX2.jpg" />
          </image>
       </ImageView>
-      <TableView fx:id="tblVehicle2" layoutX="16.0" layoutY="521.0" opacity="0.92" prefHeight="324.0" prefWidth="1296.0">
+      <TableView fx:id="tblVehicle2" layoutX="12.0" layoutY="535.0" opacity="0.92" prefHeight="324.0" prefWidth="1296.0">
         <columns>
           <TableColumn fx:id="colVehicleNumber1" prefWidth="305.9999694824219" text="Vehicle Number" />
           <TableColumn fx:id="colVehicleType1" prefWidth="268.0" text="VehicleType" />
@@ -85,5 +56,27 @@
             <TableColumn fx:id="colLeftTime" prefWidth="369.0" text="LeftTime" />
         </columns>
       </TableView>
+      <JFXButton fx:id="btnPark" buttonType="RAISED" layoutX="20.0" layoutY="80.0" onAction="#btnDisableParking" prefHeight="44.0" prefWidth="299.0" style="-fx-border-radius: 25; -fx-border-color: purple; -fx-background-radius: 25; -fx-background-color: #cd84f1;" text="View In Parking    &gt;&gt;" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="19.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <effect>
+            <DropShadow height="24.11" radius="11.555" width="24.11" />
+         </effect>
+      </JFXButton>
+      <JFXButton fx:id="btnDelivery" buttonType="RAISED" layoutX="14.0" layoutY="469.0" onAction="#btnDisableDelivery" prefHeight="44.0" prefWidth="299.0" style="-fx-border-color: purple; -fx-border-radius: 25; -fx-background-radius: 25; -fx-background-color: #cd84f1;" text="View On Delivery    &gt;&gt;" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="19.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <effect>
+            <DropShadow radius="7.6675" width="11.67" />
+         </effect>
+      </JFXButton>
    </children>
 </AnchorPane>
