@@ -37,11 +37,11 @@ the vehicles in and out of the basement.
 2. The 14th slot should only be available for the employee transportation bus.
 3. When parking, slots should be assigned to vehicles in the ascending order.
 4. Parking time and the leaving time of the vehicles should be automatically saved and the 
-    management should be able to view them from the interface at the entrance of the basement.
+   management should be able to view them from the interface at the entrance of the basement.
 5. If a slot number in between two vehicles is freed, the vehicle should be assigned to park in the 
-    first available slot when the slot numbers are arranged in the ascending order. 
+   first available slot when the slot numbers are arranged in the ascending order. 
 6. Management should be able to see the list of vehicles outside the company premises and the 
-    drivers who are driving the vehicle. 
+   drivers who are driving the vehicle. 
 
 # *Details* 🔖
 Below you can see the languages architectures, tools I used  the project.
