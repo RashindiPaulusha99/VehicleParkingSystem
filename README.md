@@ -5,8 +5,6 @@
 
 ![park](src/assets/home.png)
 
-<img src="src/assets/home.png" alt="carpark" width="1000" height="400"/>
-
 # *Introduction* 📝
 “Saman Rice” is a company that distributes rice all around Sri Lanka. For distribution, they use a range of 
 vehicles from vans to lorries with 10 feet long trailers. These vehicles are usually parked in the basement 
